@@ -59,8 +59,8 @@ ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
     # Read configuration from environment variables
-    API_ID = int(os.environ.get("API_ID", None))
-    API_HASH = os.environ.get("API_HASH", None)
+    API_ID = int(os.environ.get("API_ID","2038571"))
+    API_HASH = os.environ.get("API_HASH","5bcfc09d07a092b7818251f2a73eb0a5")
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     DB_URI = os.environ.get("DATABASE_URL")
@@ -76,7 +76,7 @@ if ENV:
     SUPPORT_ID = int(os.environ.get("SUPPORT_ID", "-100"))  # Support group id
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "Ecstasy_Realm")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEN = os.environ.get("TOKEN","7031573418:AAG5AUZjszsvSKQMDg4l5rP1Xbbm4owYq7s")
 
     # Read and validate integer variables
     try:
